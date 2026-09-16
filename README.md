@@ -33,4 +33,3 @@
 ## Ссылка на опубликованный проект
 
 GitHub Pages: https://slevakot.github.io/kr1-html-css-shop/
-Замените username на имя своего аккаунта GitHub.
