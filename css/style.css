@@ -68,6 +68,11 @@ footer {
   background-color: var(--color-surface);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* ===============================
    3. Общие элементы интерфейса
    ===============================
@@ -109,6 +114,27 @@ a:focus-visible {
 .button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+.breadcrumbs {
+  max-width: var(--container-width);
+  margin: 0 auto var(--space-md);
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+.breadcrumbs a {
+  color: var(--color-primary);
+}
+
+.breadcrumbs span::before {
+  content: " / ";
+  color: var(--color-muted);
+}
+
+:target {
+  outline: 2px dashed var(--color-primary);
+  outline-offset: 4px;
 }
 
 /* ===============================
