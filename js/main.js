@@ -19,6 +19,9 @@ orderButtons.forEach((button) => {
     // Записываем название товара в скрытое поле формы.
     selectedProductInput.value = productName;
 
+    orderForm.hidden = false;
+    successMessage.hidden = true;
+
     // Открываем модальное окно.
     orderDialog.showModal();
   });
@@ -64,11 +67,15 @@ orderForm.addEventListener('submit', (event) => {
   }
 
   // Показываем сообщение об успешной отправке.
+  orderForm.hidden = true;
   successMessage.hidden = false;
 
   // Очищаем форму.
   orderForm.reset();
 
-  // Закрываем модальное окно.
-  orderDialog.close();
+  setTimeout(() => {
+    orderDialog.close();
+    successMessage.hidden = true;
+    orderForm.hidden = false;
+  }, 1000);
 });
