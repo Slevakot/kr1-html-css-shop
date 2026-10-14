@@ -61,7 +61,7 @@ html {
    3. БЭМ-блоки и компоненты
    =============================== */
 
-/* Шапка сайта (.site-header) */
+
 .site-header {
   position: fixed;
   top: 0;
@@ -96,7 +96,6 @@ html {
   outline-offset: 3px;
 }
 
-/* Навигация (.site-nav) */
 .site-nav__list {
   display: flex;
   flex-wrap: wrap;
@@ -172,7 +171,6 @@ html {
   cursor: not-allowed;
 }
 
-/* Хлебные крошки (.breadcrumbs) */
 .breadcrumbs {
   max-width: var(--container-width);
   margin: 0 auto var(--space-md);
@@ -444,4 +442,34 @@ html {
 :target {
   outline: 2px dashed var(--color-primary);
   outline-offset: 4px;
+}
+
+.scroll-top-button {
+  position: fixed;
+  bottom: var(--space-lg);
+  right: var(--space-lg);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm) var(--space-md);
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.scroll-top-button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.scroll-top-button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.scroll-top-button[hidden] {
+  display: none !important;
 }
