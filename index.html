@@ -12,7 +12,11 @@
 <body>
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="site-header__logo" href="index.html">ShopProject</a>
+      <a class="site-header__logo" href="index.html">
+        <img class="site-header__logo-icon" src="img/logo-icon.svg" alt="" width="35" height="35">
+        <span>ShopProject</span>
+      </a>
+
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
           <li class="site-nav__item">
@@ -63,6 +67,7 @@
       <h2>Популярные товары</h2>
       <div class="products-grid">
         <article class="product-card">
+          <img class="product-card__img" src="img/products/product1.jpg" alt="товар 1">
           <h3 class="product-card__title">Товар 1</h3>
           <p class="product-card__description">Краткое описание учебного товара.</p>
           <p class="product-card__price">Цена: 1000 руб.</p>
@@ -72,6 +77,7 @@
         </article>
 
         <article class="product-card">
+          <img class="product-card__img" src="img/products/product2.jpg" alt="товар 2">
           <h3 class="product-card__title">Товар 2</h3>
           <p class="product-card__description">Краткое описание учебного товара.</p>
           <p class="product-card__price">Цена: 1500 руб.</p>
@@ -81,6 +87,7 @@
         </article>
 
         <article class="product-card">
+          <img class="product-card__img" src="img/products/product3.jpg" alt="товар 3">
           <h3 class="product-card__title">Товар 3</h3>
           <p class="product-card__description">Краткое описание учебного товара.</p>
           <p class="product-card__price">Цена: 2000 руб.</p>
@@ -168,6 +175,10 @@
       Форма успешно отправлена!
     </p>
   </dialog>
+
+  <button class="scroll-top-button" id="scroll-top-button" aria-label="Вернуться наверх" hidden>
+    ↑ Наверх
+  </button>
 </body>
 
 </html>
