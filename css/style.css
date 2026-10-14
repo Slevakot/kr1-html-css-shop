@@ -81,6 +81,9 @@ html {
 }
 
 .site-header__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
   font-weight: 700;
   color: var(--color-text);
   text-decoration: none;
@@ -255,6 +258,10 @@ html {
 .product-card__description {
   margin: 0;
   color: var(--color-muted);
+}
+
+.product-card__img {
+  width: 100%;
 }
 
 .product-card__price {
