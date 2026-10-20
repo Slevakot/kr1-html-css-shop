@@ -262,6 +262,8 @@ html {
 
 .product-card__img {
   width: 100%;
+  object-fit: contain;
+  height: 150px;
 }
 
 .product-card__price {

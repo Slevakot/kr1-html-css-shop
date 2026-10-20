@@ -9,6 +9,7 @@ const closeDialogButton = document.getElementById('close-order-dialog');
 
 // Получаем скрытое поле, в которое будет записан выбранный товар.
 const selectedProductInput = document.getElementById('selected-product');
+const selectedProductHeading = document.getElementById('selected-product-heading');
 
 // Получаем кнопку «Наверх».
 const scrollTopButton = document.getElementById('scroll-top-button');
@@ -16,7 +17,7 @@ const scrollTopButton = document.getElementById('scroll-top-button');
 // Проверяем скролл страницы для появления/скрытия кнопки.
 window.addEventListener('scroll', () => {
   // Если прокрутили больше чем на 300 пикселей вниз, показываем кнопку.
-  
+
   if (window.scrollY > 150) {
     scrollTopButton.hidden = false;
   } else {
@@ -40,6 +41,7 @@ orderButtons.forEach((button) => {
 
     // Записываем название товара в скрытое поле формы.
     selectedProductInput.value = productName;
+    selectedProductHeading.textContent = "Ваш заказ: " + productName;
 
     orderForm.hidden = false;
     successMessage.hidden = true;
