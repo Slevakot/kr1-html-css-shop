@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Описание, характеристики и отзывы об игровом системном блоке ShopProject."
+  >
+  <title>Системный блок игровой — ShopProject</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">
+        <img
+          class="site-header__logo-icon"
+          src="images/logo-icon.svg"
+          alt=""
+          width="35"
+          height="35"
+        >
+        <span>ShopProject</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__current">Системный блок игровой</span>
+    </nav>
+
+    <article class="product-page">
+      <div class="product-page__gallery">
+        <img
+          class="product-page__image"
+          src="images/products/product1.png"
+          alt="Игровой системный блок"
+        >
+      </div>
+
+      <div class="product-page__details">
+        <h1 class="product-page__title">Системный блок игровой</h1>
+
+        <p class="product-page__description">
+          Игровой компьютер для современных игр, учёбы и повседневных задач.
+          Перед покупкой уточните конфигурацию: характеристики компонентов
+          могут зависеть от выбранной комплектации.
+        </p>
+
+        <p class="product-page__price">Цена: 1500 руб.</p>
+      </div>
+    </article>
+
+    <section class="section product-page__section">
+      <h2>Характеристики</h2>
+      <ul class="product-specs">
+        <li><span>Процессор</span><span>Intel Core i5-12400F</span></li>
+        <li><span>Видеокарта</span><span>GeForce RTX 4060, 8 ГБ</span></li>
+        <li><span>Оперативная память</span><span>32 ГБ DDR5</span></li>
+        <li><span>Накопитель</span><span>SSD NVMe, 1 ТБ</span></li>
+        <li><span>Материнская плата</span><span>Чипсет B760</span></li>
+        <li><span>Блок питания</span><span>650 Вт</span></li>
+        <li><span>Корпус</span><span>Чёрный, с боковой панелью</span></li>
+        <li><span>Операционная система</span><span>Не установлена</span></li>
+      </ul>
+    </section>
+
+    <section class="section product-reviews" id="reviews">
+      <h2>Отзывы</h2>
+
+      <article class="review">
+        <h3 class="review__title">Алексей</h3>
+        <p class="review__rating" aria-label="Оценка: 5 из 5">★★★★★</p>
+        <p class="review__text">
+          Компьютер работает быстро, игры запускаются без проблем. Корпус выглядит
+          аккуратно, сборкой доволен.
+        </p>
+      </article>
+
+      <article class="review">
+        <h3 class="review__title">Мария</h3>
+        <p class="review__rating" aria-label="Оценка: 4 из 5">★★★★☆</p>
+        <p class="review__text">
+          Хороший вариант для игр и повседневных задач. Понравилось, что можно
+          сразу пользоваться компьютером после подключения.
+        </p>
+      </article>
+
+      <article class="review">
+        <h3 class="review__title">Игорь</h3>
+        <p class="review__rating" aria-label="Оценка: 5 из 5">★★★★★</p>
+        <p class="review__text">
+          Быстрый и тихий компьютер. Взял для учёбы и игр — производительности
+          хватает, выглядит отлично.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+    <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+  </footer>
+
+  <button
+      class="scroll-top-button"
+      id="scroll-top-button"
+      aria-label="Вернуться наверх"
+      hidden
+  >
+      ↑ Наверх
+  </button>
+</body>
+</html>

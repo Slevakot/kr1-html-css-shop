@@ -1,184 +1,215 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Учебный интернет-магазин</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="icon" href="images/logo-icon.svg" />
+        <script src="js/main.js" defer></script>
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Учебный интернет-магазин</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
-</head>
+    <body>
+        <header class="site-header">
+            <div class="site-header__inner">
+                <a class="site-header__logo" href="index.html">
+                    <img
+                        class="site-header__logo-icon"
+                        src="images/logo-icon.svg"
+                        alt=""
+                        width="35"
+                        height="35"
+                    />
+                    <span>ShopProject</span>
+                </a>
 
-<body>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="site-header__logo" href="index.html">
-        <img class="site-header__logo-icon" src="img/logo-icon.svg" alt="" width="35" height="35">
-        <span>ShopProject</span>
-      </a>
+                <nav class="site-nav" aria-label="Основная навигация">
+                    <ul class="site-nav__list">
+                        <li class="site-nav__item">
+                            <a
+                                class="site-nav__link site-nav__link--active"
+                                href="index.html"
+                                >Главная</a
+                            >
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="catalog.html"
+                                >Каталог</a
+                            >
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="contacts.html"
+                                >Контакты</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-      <nav class="site-nav" aria-label="Основная навигация">
-        <ul class="site-nav__list">
-          <li class="site-nav__item">
-            <a class="site-nav__link site-nav__link--active" href="index.html">Главная</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="catalog.html">Каталог</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="contacts.html">Контакты</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html#advantages">Преимущества</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html#contacts">Обратная связь</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+        <main>
+            <nav class="page-nav" aria-label="Навигация по странице">
+              <h2 class="page-nav__title">Навигация по странице:</h2>
+              <ol class="page-nav__list">
+                <li><a class="page-nav__link" href="#advantages">Преимущества</a></li>
+                <li><a class="page-nav__link" href="#popular">Популярные товары</a></li>
+                <li><a class="page-nav__link" href="#faq">Часто задаваемые вопросы</a></li>
+                <li><a class="page-nav__link" href="#contacts">Обратная связь</a></li>
+              </ol>
+            </nav>
+            <section class="hero">
+                <h1 class="hero__title">Магазин электроники ShopProject</h1>
+                <p class="hero__description">
+                    Подбираем технику для работы, учёбы, игр и дома. В каталоге представлены
+                    комплектующие для компьютеров и готовые решения: от оперативной памяти
+                    до игровых видеокарт и системных блоков. Выберите подходящий товар,
+                    изучите характеристики и оставьте заявку — мы поможем уточнить детали заказа.
+                </p>
+                <a class="button button--primary" href="#popular">Перейти к товарам</a>
+            </section>
 
-  <main>
-    <section class="hero">
-      <h1 class="hero__title">Учебный интернет-магазин</h1>
-      <p class="hero__description">
-        Это стартовая страница учебного frontend-проекта.
-        В дальнейшем на её основе будет разработан многостраничный сайт
-        интернет-магазина или каталога услуг.
-      </p>
-      <a class="button button--primary" href="#popular">Перейти к товарам</a>
-    </section>
+            <section class="section" id="advantages">
+                <h2>Преимущества проекта</h2>
+                <ul class="advantages-list">
+                    <li>понятная HTML-структура;</li>
+                    <li>семантические блоки страницы;</li>
+                    <li>подключение внешнего CSS-файла;</li>
+                    <li>подготовка к разработке многостраничного сайта.</li>
+                </ul>
+            </section>
 
-    <section class="section" id="advantages">
-      <h2>Преимущества проекта</h2>
-      <ul class="advantages-list">
-        <li>понятная HTML-структура;</li>
-        <li>семантические блоки страницы;</li>
-        <li>подключение внешнего CSS-файла;</li>
-        <li>подготовка к разработке многостраничного сайта.</li>
-      </ul>
-    </section>
+            <section class="section" id="popular">
+                <h2>Популярные товары</h2>
+                <div class="products-grid">
+                    <article class="product-card">
+                        <img
+                            class="product-card__img"
+                            src="images/products/product1.png"
+                            alt="товар 1"
+                        />
+                        <h3 class="product-card__title">
+                            Системный блок игровой
+                        </h3>
+                        <p class="product-card__description">
+                            Игровой компьютер для современных игр, учёбы и повседневных задач.
+                        </p>
+                        <p class="product-card__price">Цена: 1000 руб.</p>
+                        <a class="button button--primary product-card__button" href="product1.html"
+                          >Подробнее</a>
+                    </article>
 
-    <section class="section" id="popular">
-      <h2>Популярные товары</h2>
-      <div class="products-grid">
-        <article class="product-card">
-          <img class="product-card__img" src="img/products/product1.jpg" alt="товар 1">
-          <h3 class="product-card__title">Товар 1</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
-          <p class="product-card__price">Цена: 1000 руб.</p>
-          <button class="button button--primary product-card__button" type="button" data-product="Товар 1">
-            Заказать
-          </button>
-        </article>
+                    <article class="product-card">
+                        <img
+                            class="product-card__img"
+                            src="images/products/product2.png"
+                            alt="товар 2"
+                        />
+                        <h3 class="product-card__title">
+                            Оперативная памать XPG ddr5 (2x16 Гб)
+                        </h3>
+                        <p class="product-card__description">
+                            Комплект из двух модулей DDR5 общим объёмом 32 ГБ.
+                        </p>
+                        <p class="product-card__price">Цена: 1000000 руб.</p>
+                        <a class="button button--primary product-card__button" href="product2.html">Подробнее</a>
+                    </article>
 
-        <article class="product-card">
-          <img class="product-card__img" src="img/products/product2.jpg" alt="товар 2">
-          <h3 class="product-card__title">Товар 2</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
-          <p class="product-card__price">Цена: 1500 руб.</p>
-          <button class="button button--primary product-card__button" type="button" data-product="Товар 2">
-            Заказать
-          </button>
-        </article>
+                    <article class="product-card">
+                        <img
+                            class="product-card__img"
+                            src="images/products/product3.png"
+                            alt="товар 3"
+                        />
+                        <h3 class="product-card__title">
+                            Видеокарта GeforceRTX 4060
+                        </h3>
+                        <p class="product-card__description">
+                            Видеокарта для игр, обработки графики и повседневных задач.
+                        </p>
+                        <p class="product-card__price">Цена: 2000 руб.</p>
+                        <a class="button button--primary product-card__button" href="index.html#popular">Подробнее</a>
+                    </article>
+                </div>
+            </section>
 
-        <article class="product-card">
-          <img class="product-card__img" src="img/products/product3.jpg" alt="товар 3">
-          <h3 class="product-card__title">Товар 3</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
-          <p class="product-card__price">Цена: 2000 руб.</p>
-          <button class="button button--primary product-card__button" type="button" data-product="Товар 3">
-            Заказать
-          </button>
-        </article>
-      </div>
-    </section>
+            <section class="section faq" id="faq">
+              <h2>Часто задаваемые вопросы</h2>
 
-    <aside class="aside-info">
-      <h2>Информация для студентов</h2>
-      <p>
-        На следующих практических занятиях этот проект будет расширяться:
-        появятся формы, модальное окно, дополнительные страницы, Flex/Grid,
-        БЭМ-структура и адаптивная версия сайта.
-      </p>
-    </aside>
-  </main>
+              <details class="faq__item">
+                <summary class="faq__question">Как оформить заказ?</summary>
+                <p class="faq__answer">
+                    Нажмите кнопку «Заказать» в карточке нужного товара. В форме укажите имя,
+                          электронную почту и телефон, выберите тему заявки и отправьте её.
+                          После этого с вами свяжутся, чтобы уточнить наличие товара, комплектацию,
+                          стоимость и условия получения заказа.
+                </p>
+              </details>
 
-  <footer class="site-footer" id="contacts">
-    <p>&copy; 2026 Учебный проект. Все права защищены.</p>
-    <p>Дисциплина: Фронтенд и бэкенд разработка</p>
-  </footer>
+              <details class="faq__item">
+                <summary class="faq__question">Как узнать подробности о товаре?</summary>
+                <p class="faq__answer">
+                    Сверьте характеристики всех компонентов перед покупкой. Например,
+                          процессор должен поддерживаться материнской платой, тип памяти должен
+                          соответствовать плате, а корпус — вмещать выбранную видеокарту.
+                          Также проверьте мощность и разъёмы блока питания. Если сомневаетесь,
+                          отправьте заявку на консультацию и укажите модели комплектующих,
+                          которые планируете использовать.
+                </p>
+              </details>
 
-  <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
-    <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
+              <details class="faq__item">
+                <summary class="faq__question">Как связаться с магазином?</summary>
+                <p class="faq__answer">
+                    Да. Выберите в форме заявки тему «Консультация» и опишите задачу:
+                          например, для чего нужен компьютер, какие программы или игры вы
+                          используете и какие комплектующие уже есть. Так специалист сможет
+                          помочь подобрать подходящую конфигурацию и проверить совместимость
+                          компонентов.
+                </p>
+              </details>
 
-    <form class="order-form" id="order-form" action="#" method="post" novalidate>
-      <input id="selected-product" name="selected-product" type="hidden">
+              <details class="faq__item">
+                  <summary class="faq__question">Как узнать, есть ли товар в наличии?</summary>
+                  <p class="faq__answer">
+                    Наличие может меняться. Оставьте заявку на нужный товар, и перед
+                    оформлением заказа вам подтвердят, доступен ли он сейчас, а также
+                    уточнят срок поставки, если товара временно нет.
+                  </p>
+                </details>
 
-      <div class="order-form__field">
-        <label class="order-form__label" for="order-name">Имя</label>
-        <input class="order-form__input" id="order-name" name="name" type="text" placeholder="Введите ваше имя"
-          minlength="2" autocomplete="given-name" required>
-      </div>
+                <details class="faq__item">
+                    <summary class="faq__question">Каковы условия доставки и оплаты?</summary>
+                    <p class="faq__answer">
+                      Способ оплаты, доступные варианты доставки и их стоимость уточняются
+                      при подтверждении заказа. Укажите в заявке удобный способ связи, чтобы
+                      вам сообщили актуальные условия для выбранного товара и вашего адреса.
+                    </p>
+                  </details>
+            </section>
 
-      <div class="order-form__field">
-        <label class="order-form__label" for="order-email">E-mail</label>
-        <input class="order-form__input" id="order-email" name="email" type="email" placeholder="example@mail.ru"
-          autocomplete="email" required>
-      </div>
+            <aside class="aside-info">
+              <h2>Помощь с выбором техники</h2>
+              <p>
+                При подборе комплектующих важно учитывать их совместимость, размеры
+                корпуса, требования к питанию и задачи, для которых собирается компьютер.
+                Если нужна помощь, отправьте заявку на консультацию — обсудим подходящую
+                конфигурацию и характеристики товаров.
+              </p>
+            </aside>
+        </main>
 
-      <div class="order-form__field">
-        <label class="order-form__label" for="order-phone">Телефон</label>
-        <input class="order-form__input" id="order-phone" name="phone" type="tel" inputmode="tel"
-          placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required>
-        <small>Формат: +7 (900) 000-00-00</small>
-      </div>
+        <footer class="site-footer" id="contacts">
+            <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+            <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+        </footer>
 
-      <div class="order-form__field">
-        <label class="order-form__label" for="order-date">Дата связи</label>
-        <input class="order-form__input" id="order-date" name="date" type="date">
-      </div>
-
-      <div class="order-form__field">
-        <label class="order-form__label" for="order-topic">Тема заявки</label>
-        <select class="order-form__select" id="order-topic" name="topic" required>
-          <option value="">Выберите тему</option>
-          <option value="product">Заказ товара</option>
-          <option value="consultation">Консультация</option>
-          <option value="delivery">Доставка</option>
-        </select>
-      </div>
-
-      <div class="order-form__field">
-        <label class="order-form__label" for="order-comment">Комментарий</label>
-        <textarea class="order-form__textarea" id="order-comment" name="comment" rows="4"
-          placeholder="Укажите дополнительную информацию"></textarea>
-      </div>
-
-      <div class="order-form__field order-form__field--checkbox">
-        <label class="order-form__label">
-          <input id="order-agreement" name="agreement" type="checkbox" required>
-          Я согласен на обработку данных
-        </label>
-      </div>
-
-      <div class="order-form__actions">
-        <button class="button button--secondary" type="button" id="close-order-dialog">Закрыть</button>
-        <button class="button button--primary" type="submit">Отправить заявку</button>
-      </div>
-    </form>
-    <p class="success-message" id="success-message" hidden>
-      Форма успешно отправлена!
-    </p>
-  </dialog>
-
-  <button class="scroll-top-button" id="scroll-top-button" aria-label="Вернуться наверх" hidden>
-    ↑ Наверх
-  </button>
-</body>
-
+        <button
+            class="scroll-top-button"
+            id="scroll-top-button"
+            aria-label="Вернуться наверх"
+            hidden
+        >
+            ↑ Наверх
+        </button>
+    </body>
 </html>
